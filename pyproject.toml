@@ -1,0 +1,40 @@
+[tool.poetry]
+name = "dhgraph"
+version = "1.0.0"
+description = "Python Module for Directed Hypergraphs"
+authors = ["Takahisa Toda <toda@disc.lab.uec.ac.jp>"]
+license = "MIT"
+readme = "README.rst"
+repository = "https://github.com/toda-lab/dhgraph"
+documentation = "https://dhgraph.readthedocs.io/en/latest/"
+keywords = [
+    "mathematics",
+    "hypergraph",
+    "directed hypergraph",
+]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Science/Research",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3 :: Only",
+    "Topic :: Scientific/Engineering :: Mathematics",
+    "Topic :: Scientific/Engineering :: Artificial Intelligence",
+]
+
+[tool.poetry.dependencies]
+python = "^3.8"
+graphviz = "^0.20.3"
+
+pytest = { version ="^8.1.1", optional = true }
+
+[tool.poetry.extras]
+test = ["pytest"]
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
