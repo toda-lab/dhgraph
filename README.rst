@@ -25,7 +25,7 @@ and add hyperarcs as follows.
 
     from dhgraph import DirectedHypergraph
 
-    g = Directedhypergraph()
+    g = DirectedHypergraph()
 
     #   1 ---> 2
     #   |      |
@@ -74,7 +74,7 @@ Vertices and hyperarcs can be assigned labels, if necessary, when they are added
 
 .. code:: python
 
-    gg = Directedhypergraph()
+    gg = DirectedHypergraph()
 
     gg.add_vertex(1, label="A")
     gg.add_vertex(2, label="B")
@@ -96,8 +96,9 @@ A directed hypergraph can be rendered as follows.
 
 .. code:: python
 
-    gg.render()
+    gg.render(filename="sample", format="png")
 
+As a result, ``sample.png`` will be generated.
 The arugments of ``render()`` are the same as those of ``render()`` of
 Graphviz.
 See `User Guide of Graphviz
