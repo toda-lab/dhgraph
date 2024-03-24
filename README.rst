@@ -89,7 +89,7 @@ Vertices and hyperarcs can be assigned labels, if necessary, when they are added
 
 It should be noted that if you prefer to use vertex labels, call ``add_vertex()``
  for all vertices to which labels are to be assigned and then call ``add_hyperarc()``.
- Otherwise, ``add_hyperarc()``` will add vertices appearing in head or tail 
+ Otherwise, ``add_hyperarc()`` will add vertices appearing in head or tail 
  so that they have vertex identifiers as their labels.
 
 A directed hypergraph can be rendered as follows.
