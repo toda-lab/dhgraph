@@ -32,6 +32,7 @@ graphviz = "^0.20.3"
 
 pytest = { version ="^8.1.1", optional = true }
 Sphinx = { version = "^7.1.2", optional = true }
+sphinx-readme = { version = "^1.2.1", optional = true }
 sphinx-removed-in = { version = "^0.2.1", optional = true }
 sphinxcontrib-trio = { version = "^1.1.2", optional = true }
 pallets-sphinx-themes = { version = "^2.1.1", optional= true }
@@ -39,7 +40,7 @@ pallets-sphinx-themes = { version = "^2.1.1", optional= true }
 
 [tool.poetry.extras]
 test = ["pytest"]
-docs = ["Sphinx", "sphinx-removed-in", "sphinxcontrib-trio", "pallets-sphinx-themes"]
+docs = ["Sphinx", "sphinx-removed-in", "sphinx-readme", "sphinxcontrib-trio", "pallets-sphinx-themes"]
 
 [build-system]
 requires = ["poetry-core"]
