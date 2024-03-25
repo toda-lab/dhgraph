@@ -8,6 +8,9 @@ It consists of a set of *vertices* ``V`` and a set of *hyperarcs* ``H``.
 A hyperarc is a pair of a nonempty subset of ``V`` (called *head*) and a vertex
 of ``V`` (called *tail*).
 
+Definitions and terminology used in this document as well as source code are based on the paper: Giorgio Ausiello, Luigi Laura, `Directed hypergraphs: Introduction and fundamental algorithms: A survey <https://doi.org/10.1016/j.tcs.2016.03.016>`__
+, Theoretical Computer Science, Volume 658, Part B, 2017, Pages 293-306.
+
 Installation
 ============
 
@@ -18,8 +21,8 @@ Installation
 Usage
 =====
 
-Let us import ``dhgraph`` module, create an empty directed hypergraph object, 
-and add hyperarcs as follows.
+Let us import ``dhgraph`` module, create an empty directed hypergraph, 
+and add hyperarcs.
 
 .. code:: python
 
@@ -50,7 +53,7 @@ and returns the identifier of a hyperarc having the head and the tail.
 
 The vertices and the hyperarcs added so far can be obtained 
 by ``get_vertices()`` and ``get_hyperarcs()``, which respecitvely return 
-a tuple of vertex identifiers and a tuple of hyperarc identifiers, as follows.
+a tuple of vertex identifiers and a tuple of hyperarc identifiers.
 
 .. code:: python
 
@@ -60,7 +63,7 @@ a tuple of vertex identifiers and a tuple of hyperarc identifiers, as follows.
 Hyperarcs that are incident to a vertex can be obtained by
 ``get_hyperarcs_from()`` and ``get_hyperarcs_to()``, which respectively return
 a tuple of hyperarcs emanating from a vertex and a tuple of hyperarcs pointing
-to a vertex, as follows.
+to a vertex.
 
 .. code:: python
 
@@ -99,7 +102,7 @@ A directed hypergraph can be rendered as follows.
     gg.render(filename="sample", format="png")
 
 As a result, ``sample.png`` will be generated.
-The arugments of ``render()`` are the same as those of ``render()`` of
+The arguments of ``render()`` are the same as those of ``render()`` of
 Graphviz.
 See `User Guide of Graphviz
 <https://graphviz.readthedocs.io/en/stable/manual.html>`__ .
