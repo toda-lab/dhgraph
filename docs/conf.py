@@ -32,6 +32,7 @@ extensions = [
     "sphinx.ext.intersphinx",
     "sphinx_removed_in",
     "sphinxcontrib_trio",
+    "sphinx-readme",
 ]
 
 templates_path = ['_templates']
