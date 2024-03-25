@@ -69,7 +69,7 @@ to a vertex.
 
     assert set(g.get_hyperarcs_from(1)) == {h1, h2}
     assert set(g.get_hyperarcs_to(3))   == {h3}
-    # exceptinal cases
+    # exceptional cases
     assert set(g.get_hyperarcs_from(3)) == set()
     assert set(g.get_hyperarcs_to(1))   == set()
 
