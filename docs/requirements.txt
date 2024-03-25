@@ -1,0 +1,6 @@
+pallets-sphinx-themes
+sphinx
+sphinx-removed-in
+sphinxcontrib-trio
+sphinxcontrib-svg2pdfconverter
+-e .
