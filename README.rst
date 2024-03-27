@@ -1,4 +1,4 @@
-dhgraph: Python Modlue for Directed Hypergraphs
+dhgraph: Python Module for Directed Hypergraphs
 ===============================================
 
 Introduction
